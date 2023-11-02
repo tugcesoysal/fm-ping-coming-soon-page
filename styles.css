@@ -1,36 +1,35 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
 }
 
 html{
     width: 100vw;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 body{
+    width: 100%;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 90px;
-    padding-top: 80px;
-   
+    padding-top: 50px;
 }
 
 .logo {
 width: 60px;
-margin-bottom: 40px;
+margin-bottom: 30px;
 }
 
 .header{
     font-size: 1.1rem;
     font-weight: 300;
     color: hsl(0, 0%, 59%);
-    margin-bottom: 20px;
 }
 
 .span{
@@ -41,12 +40,12 @@ margin-bottom: 40px;
 .subscribe{
     font-size: 0.6rem;
     color: hsl(209, 33%, 12%);
-    margin-bottom: 30px;
 }
 
-form{
-       display: flex;
-       flex-direction: column; 
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
 input{
@@ -54,12 +53,12 @@ width: 230px;
 height: 35px;
 border-radius: 30px;
 border: 1px solid hsl(223, 100%, 88%);
-padding-left: 30px;
 cursor: pointer;
-margin-bottom: 5px;
+padding-left: 20px;
 }
 
 input::placeholder{
+    padding-left: 20px;
     font-size: 0.8rem;
     color:hsl(223, 100%, 88%);  
 }
@@ -88,13 +87,13 @@ font-size: 0.7rem;
 letter-spacing: 0.5px;
 box-shadow: hsl(223, 100%, 88%) 0px 2px 10px;
 cursor: pointer;
-margin-top: 15px;
+margin-top: 10px;
 }
 
 .dashboard{
 width: 250px;
-margin-top: 60px;
-margin-bottom: 120px;
+margin-top: 40px;
+margin-bottom: 100px;
 }
 
 
@@ -104,7 +103,6 @@ i{
     padding: 8px;
     font-size: 15px;
     color: hsl(223, 87%, 63%);
-    margin-bottom: 30px;
     margin-inline: 5px;
     cursor: pointer;
 }
@@ -115,26 +113,29 @@ i:hover{
 }
 
 .copyright{
+    margin-top: 20px;
     font-size: 0.6rem;
     color: hsl(0, 0%, 59%);
 }
 
 @media (min-width:760px) {
     body{
-        padding-top: 80px;
+        width: 100%;
+        padding-top: 60px;
     }
 
     .logo{
-        width: 45px;
-        margin-bottom: 20px;
+        width: 90px;
+        margin-bottom: 10px;
     }
 
     .header{
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-bottom: 10px;
     }
 
     .subscribe{
+        font-size: 1rem;
         margin-bottom: 10px;
     }
 
@@ -149,37 +150,38 @@ i:hover{
     }
 
     input{
-        width: 240px;
-        height: 30px;
+        width: 370px;
+        height: 45px;
+        font-size: 1rem;
     }
 
     .error{
         margin-left: 15px;
+        font-size: 1rem;
     }
 
     
     button{
-        width: 100px;
-        height: 30px;
-        margin-bottom: 30px;
+        width: 130px;
+        height: 45px;
+        margin-bottom: 60px;
         margin-left: 3px;
     }
 
     .dashboard{
-        width: 350px;
+        width: 520px;
         margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     i{
-        padding: 2px;
-        font-size: 7px;
+        padding: 5px;
+        font-size: 20px;
         color: hsl(223, 87%, 63%);
-        margin-bottom: 10px;
     }
     
     .copyright{
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
 }
 
